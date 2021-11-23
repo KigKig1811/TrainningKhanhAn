@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/padding_item"
+    android:layout_marginRight="@dimen/padding_item"
+    android:layout_marginBottom="@dimen/margin_bottom"
+    android:background="@drawable/background_radius_white"
+
+    android:orientation="horizontal">
+
+
+    <com.vnpay.anlmk.ui.views.TextView
+        android:id="@+id/account_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/margin_top"
+        android:layout_weight="0.1"
+        android:textSize="@dimen/textsize_accountnumber" />
+
+</LinearLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_bar" />
+
+    <com.vnpay.anlmk.ui.views.TextView
+        android:id="@+id/txtsystemAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart_view_internaltransfer"
+        android:layout_marginLeft="@dimen/marginLeft_view_internaltransfer"
+        android:layout_marginTop="@dimen/marginTop_view_internaltransfer"
+        android:layout_marginEnd="@dimen/marginEnd_view_internaltransfer"
+        android:layout_marginRight="@dimen/marginRight_view_internaltransfer"
+        android:textSize="@dimen/main_size"
+        android:gravity="center_vertical"
+        android:text="@string/titleAccountFrom"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@id/title"
+
+        />
+
+
+    <Spinner
+        android:id="@+id/myaccount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_spinner"
+        android:layout_marginStart="@dimen/marginStart_view_internaltransfer"
+        android:layout_marginLeft="@dimen/marginLeft_view_internaltransfer"
+        android:layout_marginTop="@dimen/marginTop_view_internaltransfer"
+        android:layout_marginEnd="@dimen/marginEnd_view_internaltransfer"
+        android:layout_marginRight="@dimen/marginRight_view_internaltransfer"
+        android:spinnerMode="dropdown"
+        style="@style/Widget.AppCompat.Spinner.DropDown"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtsystemAccount" />
+
+    <com.vnpay.anlmk.ui.views.TextView
+        android:id="@+id/title_info_receiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart_view_internaltransfer"
+        android:layout_marginLeft="@dimen/marginLeft_view_internaltransfer"
+        android:layout_marginTop="@dimen/marginTop_view_internaltransfer"
+        android:layout_marginEnd="@dimen/marginEnd_view_internaltransfer"
+        android:layout_marginRight="@dimen/marginRight_view_internaltransfer"
+        android:text="@string/titleAccountTo"
+        android:textColor="@color/red"
+        android:textSize="@dimen/main_size"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myaccount" />
+
+    <com.vnpay.anlmk.ui.views.TextView
+        android:id="@+id/tv_accountFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart_view_internaltransfer"
+        android:layout_marginLeft="@dimen/marginLeft_view_internaltransfer"
+        android:layout_marginTop="@dimen/marginTop_view_internaltransfer"
+        android:layout_marginEnd="@dimen/marginEnd_view_internaltransfer"
+        android:layout_marginRight="@dimen/marginRight_view_internaltransfer"
+        android:text="@string/accountNumberTo"
+        android:textSize="@dimen/main_size"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_info_receiver" />
+
+    <com.vnpay.anlmk.ui.views.EditText
+        android:id="@+id/receiver_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart_view_internaltransfer"
+        android:layout_marginLeft="@dimen/marginLeft_view_internaltransfer"
+        android:layout_marginTop="@dimen/marginTop_view_internaltransfer"
+        android:layout_marginEnd="@dimen/marginEnd_view_internaltransfer"
+        android:layout_marginRight="@dimen/marginRight_view_internaltransfer"
+        android:background="@drawable/background_edittext"
+        android:hint="@string/accountNumber"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:minLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_accountFrom" />
+
+
+    <com.vnpay.anlmk.ui.views.TextView
+        android:id="@+id/tv_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart_view_internaltransfer"
+        android:layout_marginLeft="@dimen/marginLeft_view_internaltransfer"
+        android:layout_marginTop="@dimen/marginTop_view_internaltransfer"
+        android:layout_marginEnd="@dimen/marginEnd_view_internaltransfer"
+        android:layout_marginRight="@dimen/marginRight_view_internaltransfer"
+        android:text="@string/money"
+        android:textSize="@dimen/main_size"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/receiver_account" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutvalueofmoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart_view_internaltransfer"
+        android:layout_marginLeft="@dimen/marginLeft_view_internaltransfer"
+        android:layout_marginTop="@dimen/marginTop_view_internaltransfer"
+        android:layout_marginEnd="@dimen/marginEnd_view_internaltransfer"
+        android:layout_marginRight="@dimen/marginRight_view_internaltransfer"
+        android:background="@drawable/background_edittext"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_money">
+
+        <com.vnpay.anlmk.ui.views.EditText
+            android:id="@+id/valueofmoney"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width_edt_view_internaltransfer"
+            android:background="@color/white_filled"
+            android:hint="@string/money"
+
+            android:inputType="number"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/main_size"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/vnd"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.vnpay.anlmk.ui.views.TextView
+            android:id="@+id/vnd"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/width_edt_view_internaltransfer"
+            android:gravity="center"
+            android:text="@string/VND"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.vnpay.anlmk.ui.views.TextView
+        android:id="@+id/tv_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart_view_internaltransfer"
+        android:layout_marginLeft="@dimen/marginLeft_view_internaltransfer"
+        android:layout_marginTop="@dimen/marginTop_view_internaltransfer"
+        android:layout_marginEnd="@dimen/marginEnd_view_internaltransfer"
+        android:layout_marginRight="@dimen/marginRight_view_internaltransfer"
+        android:text="@string/note"
+
+        android:textSize="@dimen/main_size"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutvalueofmoney" />
+
+
+    <com.vnpay.anlmk.ui.views.EditText
+        android:id="@+id/contentofnote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart_view_internaltransfer"
+        android:layout_marginLeft="@dimen/marginLeft_view_internaltransfer"
+        android:layout_marginTop="@dimen/marginTop_view_internaltransfer"
+        android:layout_marginEnd="@dimen/marginEnd_view_internaltransfer"
+        android:layout_marginRight="@dimen/marginRight_view_internaltransfer"
+        android:background="@drawable/background_edittext"
+        android:digits="@string/allowsenteringnotes"
+        android:hint="@string/noteTransfer"
+        android:maxLength="200"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_note" />
+
+
+    <com.vnpay.anlmk.ui.views.Button
+        android:id="@+id/init_internal_transfer"
+        style="@style/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contentofnote" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

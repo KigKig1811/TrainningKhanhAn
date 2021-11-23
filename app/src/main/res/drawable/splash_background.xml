@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@android:color/white"/>
+    <item>
+        <bitmap android:src="@drawable/logo_vba_140_x_42"
+                android:antialias="true"
+                android:autoMirrored="false"
+                android:gravity="center"
+                android:mipMap="false"
+                android:tileMode="disabled"
+        />
+    </item>
+</layer-list>

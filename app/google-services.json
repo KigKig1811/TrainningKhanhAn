@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "926049835272",
+    "firebase_url": "https://agribankbusiness.firebaseio.com",
+    "project_id": "agribankbusiness",
+    "storage_bucket": "agribankbusiness.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926049835272:android:f085360af22cf86bdf34bd",
+        "android_client_info": {
+          "package_name": "com.vnpay.anlmk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926049835272-4g7p1of5iuk2qhablcjslimo8o6e5s45.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXQBEZMPkFy35dFGbRQkfd-HuhaxlNfXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926049835272-4g7p1of5iuk2qhablcjslimo8o6e5s45.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

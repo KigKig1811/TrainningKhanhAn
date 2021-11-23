@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dexprotector>
+    <verbose>false</verbose>
+    <optimize>false</optimize>
+    <signMode>release</signMode>
+    <!--<keystore>NoSignKey</keystore>-->
+    <!--<alias>NoSignKey</alias>-->
+    <!--<storepass>12345678</storepass>-->
+    <!--<keypass>12345678</keypass>-->
+    <v2SigningEnabled />
+    <proguardMapFile>.\build\outputs\mapping\release\mapping.txt</proguardMapFile>
+    <stripLogging>all,debug,verbose,warning,wtf</stripLogging>
+
+    <resourceEncryption androidManifestMangling="off" nameObfuscation="on">
+        <res>
+            <filters>
+                <filter>layout*.xml</filter>
+            </filters>
+        </res>
+        <strings/>
+    </resourceEncryption>
+
+    <stringEncryption mode="all">
+        <filters>
+            <filter>glob:com/vnpay/**</filter>
+            <filter>glob:com/bookinghotel/**</filter>
+            <filter>glob:com/vn/**</filter>
+        </filters>
+    </stringEncryption>
+
+    <classEncryption>
+        <filters>
+            <filter>glob:com/vnpay/security/**</filter>
+            <filter>glob:com/vnpay/vnsoftotpmobileclientlib/**</filter>
+            <filter>glob:com/bookinghotel/**</filter>
+            <filter>glob:com/vnpay/ticketlib/**</filter>
+
+        </filters>
+    </classEncryption>
+    <detect>
+        <trace>9</trace>
+        <integrity>
+            <positiveCheckCallback>com.vnpay.anlmk.data.b.a</positiveCheckCallback>
+            <negativeCheckCallback>com.vnpay.anlmk.data.b.b</negativeCheckCallback>
+            <probeMethod>com.vnpay.anlmk.data.b.c</probeMethod>
+        </integrity>
+        <root>
+            <positiveCheckCallback>com.vnpay.anlmk.data.b.d</positiveCheckCallback>
+            <negativeCheckCallback>com.vnpay.anlmk.data.b.d2</negativeCheckCallback>
+            <probeMethod>com.vnpay.anlmk.data.b.c</probeMethod>
+        </root>
+        <hooks>
+            <positiveCheckCallback>com.vnpay.anlmk.data.b.x</positiveCheckCallback>
+            <negativeCheckCallback>com.vnpay.anlmk.data.b.x2</negativeCheckCallback>
+            <probeMethod>com.vnpay.anlmk.data.b.c</probeMethod>
+        </hooks>
+<!--        <emulator>-->
+<!--            <positiveCheckCallback>com.vnpay.base.data.b.f</positiveCheckCallback>-->
+<!--            <negativeCheckCallback>com.vnpay.base.data.b.f2</negativeCheckCallback>-->
+<!--            <probeMethod>com.vnpay.base.data.b.c</probeMethod>-->
+<!--        </emulator>-->
+<!--        <customFirmware>-->
+<!--            <positiveCheckCallback>com.vnpay.base.data.b.f</positiveCheckCallback>-->
+<!--            <negativeCheckCallback>com.vnpay.base.data.b.f2</negativeCheckCallback>-->
+<!--            <probeMethod>com.vnpay.base.data.b.c</probeMethod>-->
+<!--        </customFirmware>-->
+    </detect>
+</dexprotector>

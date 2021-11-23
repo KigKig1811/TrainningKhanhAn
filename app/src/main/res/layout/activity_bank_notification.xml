@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_line"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_title_bar"
+            android:paddingLeft="5dp"
+            android:gravity="center_horizontal"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:weightSum="3">
+
+        <com.vnpay.anlmk.ui.views.TextView
+                android:id="@+id/first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:minWidth="100dp"
+                android:background="@drawable/bank_selector"
+                android:gravity="center_horizontal"
+                android:lines="1"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/all"
+                android:textColor="@color/color_top_menu"
+                android:textSize="14sp"
+                app:check="true" />
+
+        <com.vnpay.anlmk.ui.views.TextView
+                android:id="@+id/second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bank_selector"
+                android:gravity="center_horizontal"
+                android:lines="1"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/dynamic_var_balance"
+                android:textColor="@color/color_top_menu"
+                android:textSize="14sp" />
+
+        <com.vnpay.anlmk.ui.views.TextView
+                android:id="@+id/third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:minWidth="100dp"                android:background="@drawable/bank_selector"
+                android:gravity="center_horizontal"
+                android:lines="1"
+                android:maxWidth="150dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/other_news"
+                android:textColor="@color/color_top_menu"
+                android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <com.vnpay.anlmk.ui.views.EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:drawablePadding="8dp"
+            android:hint="@string/search"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/descript_size"
+            app:left="@drawable/searchbargrey_1x" />
+
+    <com.vnpay.anlmk.ui.views.CircleProgressBar
+            android:id="@+id/loading"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <com.vnpay.anlmk.ui.views.TextView
+            android:id="@+id/not_found_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="40dp"
+            android:background="@drawable/radius_alert"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:padding="25dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:top="@drawable/icon_empty_grey"
+            android:text="@string/empty_list_notification"
+            android:textColor="@color/color_hint"
+            android:textSize="15sp" />
+
+</LinearLayout>

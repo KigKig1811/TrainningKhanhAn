@@ -1,0 +1,11 @@
+package com.vnpay.anlmk.main
+
+const val BANK_CODE = 9704191
+
+fun getOTTLicense(): String {
+    return "kLhR+9sa+T73e7iEnTOlf1qK4s3r+LV/JK37Q1fi7rDmZdN3X/VhJLp0sQxIUh51EOizcKIHWkn+Vr6dPSKhzNilzypYVXz5NZRhPUJwavOJvSzJWC6X06x83KrEoEbEqG4iRfsec6jD5Yag6NBGeYxcme1G1SDQhtbTlNXsurYvzDwXdiPSzFiPan5bgNfOLfpqoN1EdHZHLMRjPDOPapaBW+1jFxa+rGX21ahdvtKJ88PsZBKdjVKV9i2Ybnim9quwB5C2kw0ikt+5x/qXCjNR45QwAtAvHiWyhtGTrdZBO7jixLoky0qEuc0t3l3tWvq5TW9CvM9XqPbWizCa93yqA0suXl5VPcv+aGEbchSRnIpwDLfA/LK+3917gyoNjJad+AYxoSJwv52nJ7rigNpSC2cDtBwxzycZOVLCFJIH/b4KsBMuRAQp1TXWDfxaXhrxM32AERhl8cqLjK1vFGT/tCIylMsSCqZ5myyYvWYxTeaidd0Npm43Si7Xl17Bz0WxqZjD3Kmgbno2S0zeczwVzgQmgKYVSErChLOGJw=="
+}
+fun getXOTTLicense(): String {
+    return "fc67458a9e5f44c0"
+}
+

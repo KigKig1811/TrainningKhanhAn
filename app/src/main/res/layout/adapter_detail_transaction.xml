@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.vnpay.anlmk.ui.views.TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:padding="15dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/radius_alert"
+        app:right="@drawable/angle_right"
+        android:text="@string/infor_transaction"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/main_size" />
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imglogoapp"
+        android:layout_width="@dimen/width_logo_login"
+        android:layout_height="@dimen/height_logo_login"
+        android:layout_marginBottom="@dimen/marginBottom_logo_login"
+        android:src="@drawable/component_2"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <com.vnpay.anlmk.ui.views.EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/marginHorizontal_view_login"
+        android:hint="@string/hintusername"
+        android:inputType="textAutoComplete"
+        android:lines="1"
+        android:maxLength="20"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.vnpay.anlmk.ui.views.EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/marginHorizontal_view_login"
+        android:hint="@string/hintpassword"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:digits="@string/myAlphaNumeric"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+
+        />
+
+    <com.vnpay.anlmk.ui.views.Button
+        android:id="@+id/btnlogin"
+        style="@style/submit"
+        android:layout_width="@dimen/width_btn_login"
+        android:layout_height="@dimen/height_btn_login"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/btnlogin"
+        android:textColor="@color/white_filled"
+        android:textSize="@dimen/textsize_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

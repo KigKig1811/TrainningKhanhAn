@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/border"
+    android:layout_marginBottom="10dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.vnpay.anlmk.ui.views.TextView
+        android:id="@+id/txtnumberaccount"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.vnpay.anlmk.ui.views.TextView
+            android:id="@+id/titleaccountbalance"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/accountbalance"
+            android:layout_height="wrap_content"/>
+
+        <com.vnpay.anlmk.ui.views.TextView
+            android:textColor="@color/black"
+            android:id="@+id/valueaccountbalance"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/marginLeft_view_adapter"
+            android:layout_height="wrap_content"/>
+
+        <com.vnpay.anlmk.ui.views.TextView
+            android:textColor="@color/black"
+            android:id="@+id/lang"
+            android:text="@string/VND"
+            android:layout_marginLeft="@dimen/marginLeft_view_adapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

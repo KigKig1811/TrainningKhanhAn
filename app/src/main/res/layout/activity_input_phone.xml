@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:background="@android:color/white"
+              android:layout_height="match_parent">
+
+
+
+    <com.vnpay.anlmk.ui.views.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="20dp"
+            android:lineSpacingExtra="3sp"
+            android:textStyle="bold"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/app_name"
+    />
+
+    <com.vnpay.anlmk.ui.views.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorPrimary"
+            android:letterSpacing="0.03"
+            android:lineSpacingExtra="4sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal"
+            android:text="@string/active_app"/>
+
+    <com.vnpay.anlmk.ui.views.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#67727b"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="14dp"
+            android:letterSpacing="0.03"
+            android:layout_marginLeft="@dimen/margin_form_login"
+            android:layout_marginRight="@dimen/margin_form_login"
+            android:lineSpacingExtra="6sp"
+            android:gravity="center_horizontal"
+            android:text="@string/des_active_app"/>
+    <com.vnpay.anlmk.ui.views.EditText
+            android:id="@+id/input_phone"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:textColor="#67727b"
+            android:lineSpacingExtra="4sp"
+            android:padding="15dp"
+            android:maxLength="13"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/margin_form_login"
+            android:layout_marginRight="@dimen/margin_form_login"
+            android:hint="0 XXX XXX XXX"
+            android:background="@drawable/input_bottom"
+            android:layout_height="wrap_content"/>
+    <com.vnpay.anlmk.ui.views.Button
+            android:id="@+id/submit"
+            style="@style/submit"
+    />
+
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.1"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:gravity="center_horizontal"
+    >
+
+        <com.vnpay.anlmk.ui.views.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#67727b"
+                android:lineSpacingExtra="3sp"
+                android:padding="30dp"
+                android:text="@string/faq"
+                android:id="@+id/faq"
+
+                android:gravity="center_vertical"
+                android:drawablePadding="5dp"
+                app:left="@drawable/ic_faq_login"
+        />
+        <com.vnpay.anlmk.ui.views.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#67727b"
+                android:padding="30dp"
+                android:id="@+id/contact"
+
+                android:lineSpacingExtra="3sp"
+                android:text="@string/contact"
+                android:gravity="center_vertical"
+                android:drawablePadding="5dp"
+                app:left="@drawable/ic_contact_login"
+        />
+    </LinearLayout>
+</LinearLayout>

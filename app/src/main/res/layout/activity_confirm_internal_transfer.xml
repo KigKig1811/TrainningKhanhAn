@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_bar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_info_transfer"
+        android:layout_margin="@dimen/home_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"/>
+
+    <com.vnpay.anlmk.ui.views.TextView
+        android:id="@+id/content_opt_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:text="@string/content_otp_transfer"
+        app:layout_constraintTop_toBottomOf="@id/rcv_info_transfer"/>
+
+    <com.vnpay.anlmk.ui.views.NumberOTPView
+        android:id="@+id/valueopt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/otp_margin"
+        android:digits="@string/InputOTP"
+        android:inputType="number"
+        android:maxLength="6"
+        app:layout_constraintTop_toBottomOf="@id/content_opt_transfer"
+        />
+
+
+    <com.vnpay.anlmk.ui.views.Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="@dimen/width_button"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft_confirmtransfer"
+        android:layout_marginTop="@dimen/marginTop_confirmtransfer"
+        android:background="@drawable/title_bank_notification"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/white_filled"
+        android:textSize="@dimen/main_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/valueopt" />
+
+    <com.vnpay.anlmk.ui.views.Button
+        android:id="@+id/btn_next"
+        android:layout_width="@dimen/width_button"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginLeft_confirmtransfer"
+        android:layout_marginTop="@dimen/marginTop_confirmtransfer"
+        android:layout_marginRight="@dimen/marginright_confirmtransfer"
+        android:background="@drawable/agree_bg"
+        android:text="@string/btn_continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white_filled"
+        android:textSize="@dimen/main_size"
+        app:layout_constraintRight_toLeftOf="@id/btn_cancel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_cancel"
+        app:layout_constraintTop_toBottomOf="@id/valueopt" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

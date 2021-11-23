@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingTop="5dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="5dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            app:srcCompat="@drawable/agribank_circle" />
+
+    <FrameLayout
+            android:layout_width="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:background="@drawable/radius_alert"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingBottom="5dp"
+                android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true" />
+
+            <com.vnpay.anlmk.ui.views.TextView
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:autoLink="web"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:paddingTop="7dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/color_text"
+                    android:textSize="@dimen/descript_size" />
+            <com.vnpay.anlmk.ui.views.TextView
+                    android:id="@+id/payment"
+                    style="@style/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:minWidth="200dp"
+                    android:visibility="gone"
+                    android:textSize="@dimen/descript_size"
+                    android:padding="8dp"
+                    android:text="@string/approval_command" />
+
+            <include layout="@layout/layout_time_state_message" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginTop="12dp"
+                android:elevation="5dp"
+                app:srcCompat="@drawable/left" />
+    </FrameLayout>
+
+</LinearLayout>

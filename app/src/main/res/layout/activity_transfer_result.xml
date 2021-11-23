@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_bar"/>
+
+    <ImageView
+        android:id="@+id/imgcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop_img_check"
+        android:src="@drawable/checked"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"/>
+
+    <com.vnpay.anlmk.ui.views.TextView
+        android:id="@+id/titlesuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/success"
+        android:textColor="@color/red"
+        android:textSize="@dimen/textsize_success"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgcheck"/>
+
+    <com.vnpay.anlmk.ui.views.TextView
+        android:id="@+id/successvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/success_value"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titlesuccess"/>
+
+    <com.vnpay.anlmk.ui.views.TextView
+        android:id="@+id/tv_money_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:textColor="@color/red"
+        android:textSize="@dimen/textsize_success"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/successvalue"
+
+       />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_info_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/home_margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_money_transfer"/>
+
+    <com.vnpay.anlmk.ui.views.Button
+        android:id="@+id/new_transaction"
+        style="@style/submit"
+        android:layout_width="@dimen/width_btn_login"
+        android:layout_height="@dimen/height_btn_login"
+        android:text="@string/newtransaction"
+        android:textColor="@color/white_filled"
+        android:textSize="@dimen/main_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rcv_info_transfer"
+        app:layout_constraintVertical_bias="0.14">
+
+    </com.vnpay.anlmk.ui.views.Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

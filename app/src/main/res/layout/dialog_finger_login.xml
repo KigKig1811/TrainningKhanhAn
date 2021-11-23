@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/radius_alert"
+        android:minWidth="320dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="25dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp">
+
+
+    <com.vnpay.anlmk.ui.views.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="15dp"
+            android:text="@string/finger_login_des"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/main_size" />
+
+
+    <com.vnpay.anlmk.ui.views.EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box_radius"
+            android:ellipsize="end"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:gravity="center_horizontal"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/color_text"
+            android:textColorHint="@color/color_hint"
+            android:textSize="@dimen/main_size" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+        <com.vnpay.anlmk.ui.views.TextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/cancel"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="15.5sp"
+                android:textStyle="bold" />
+
+        <com.vnpay.anlmk.ui.views.TextView
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/btn_continue"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="15.5sp"
+                android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

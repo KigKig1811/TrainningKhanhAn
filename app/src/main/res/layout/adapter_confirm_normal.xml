@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/border_bottom"
+              android:orientation="horizontal"
+              android:paddingBottom="20dp"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:paddingTop="20dp">
+
+    <com.vnpay.anlmk.ui.views.TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:maxWidth="180dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/color_hint"
+            android:textSize="@dimen/descript_size" />
+
+    <com.vnpay.anlmk.ui.views.TextView
+            android:id="@+id/value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            android:gravity="right"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/main_size" />
+
+</LinearLayout>

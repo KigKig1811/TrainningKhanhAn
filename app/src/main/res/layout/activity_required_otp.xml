@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imglogoapp"
+        android:layout_width="@dimen/width_logo_login"
+        android:layout_height="@dimen/height_logo_login"
+        android:layout_marginBottom="@dimen/marginBottom_logo_otp"
+        android:src="@drawable/component_2"
+        app:layout_constraintBottom_toTopOf="@id/tv_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <com.vnpay.anlmk.ui.views.TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/marginBottom_logo_otp"
+        android:gravity="center"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="@string/content_otp"
+        app:layout_constraintBottom_toTopOf="@+id/txtopt"/>
+
+    <com.vnpay.anlmk.ui.views.NumberOTPView
+        android:id="@+id/txtopt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/otp_margin"
+        android:digits="@string/InputOTP"
+        android:inputType="number"
+        android:maxLength="6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <com.vnpay.anlmk.ui.views.Button
+        style="@style/submit"
+        android:id="@+id/submit_OTP"
+        android:layout_width="@dimen/width_btn_login"
+        android:layout_height="@dimen/height_btn_login"
+        android:text="@string/btn_continue"
+        android:textColor="@color/white_filled"
+        android:textSize="@dimen/textsize_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtopt"
+        app:layout_constraintVertical_bias="0.24">
+    </com.vnpay.anlmk.ui.views.Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

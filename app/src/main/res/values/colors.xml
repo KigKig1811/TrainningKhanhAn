@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#2196F3</color>
+    <color name="colorAccent">#5A1728</color>
+    <color name="indicator_selected">#F9CA35</color>
+    <color name="indicator_unselected">#9fffffff</color>
+
+    <color name="color_hint">#B4B4B4</color>
+    <color name="color_text">#444444</color>
+    <color name="border">#DEDEDE</color>
+    <color name="notp_color">#8a949d</color>
+    <color name="page_color">#f3f3f3</color>
+    <color name="default_color">#e0562b</color>
+    <color name="menu_color">#64666c</color>
+    <color name="color_touch">#3fae1c3f</color>
+    <color name="green">#4CAF50</color>
+    <color name="bg_search">#F2F6F8</color>
+    <color name="type1">#e83c3c</color>
+    <color name="type2">#4e93e9</color>
+    <color name="type3">#ffd800</color>
+    <color name="type4">#44b380</color>
+    <color name="type5">#bac4cc</color>
+    <color name="type6">#f06744</color>
+    <color name="type7">#b53151</color>
+    <color name="gray_line">#e2e2e2</color>
+    <color name="white_filled">#afffffff</color>
+    <color name="disabled_color_text">#af4a4a4a</color>
+    <color name="black">#000000</color>
+    <color name="red">#e83c3c</color>
+    <color name="backgroundHome">#f3f3f3</color>
+
+
+
+</resources>

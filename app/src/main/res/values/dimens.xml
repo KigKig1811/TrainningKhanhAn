@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="descript_size">14.5sp</dimen>
+    <dimen name="main_size">17sp</dimen>
+    <dimen name="font_otp_size">35sp</dimen>
+    <dimen name="ts_home_menu">11sp</dimen>
+    <dimen name="home_margin">15dp</dimen>
+    <dimen name="margin_form_login">38dp</dimen>
+    <dimen name="padding_item">15dp</dimen>
+    <dimen name="min_height">60dp</dimen>
+    <dimen name="padding_item_topbottom">10dp</dimen>
+    <dimen name="margin_top">10dp</dimen>
+    <dimen name="margin_bottom">10dp</dimen>
+    <dimen name="text_size_title_account">10sp</dimen>
+    <dimen name="otp_margin">50dp</dimen>
+    <dimen name="width_button">150dp</dimen>
+    <dimen name="marginLeft_confirmtransfer">32dp</dimen>
+    <dimen name="marginTop_confirmtransfer">68dp</dimen>
+    <dimen name="marginright_confirmtransfer">100dp</dimen>
+    <dimen name="counter">18dp</dimen>
+    <dimen name="textsize_function1_home">15sp</dimen>
+    <dimen name="textsize_btn">15sp</dimen>
+    <dimen name="marginLeft_counter">14dp</dimen>
+    <dimen name="marginTop_counter">5dp</dimen>
+    <dimen name="marginStart_view_internaltransfer">14dp</dimen>
+    <dimen name="marginLeft_view_internaltransfer">14dp</dimen>
+    <dimen name="marginTop_view_internaltransfer">15dp</dimen>
+    <dimen name="marginEnd_view_internaltransfer">14dp</dimen>
+    <dimen name="marginRight_view_internaltransfer">14dp</dimen>
+    <dimen name="width_spinner">50dp</dimen>
+    <dimen name="width_edt_view_internaltransfer">50dp</dimen>
+    <dimen name="width_logo_login">240dp</dimen>
+    <dimen name="height_logo_login">52dp</dimen>
+    <dimen name="marginBottom_logo_login">100dp</dimen>
+    <dimen name="marginHorizontal_view_login">50dp</dimen>
+    <dimen name="width_btn_login">200dp</dimen>
+    <dimen name="height_btn_login">50dp</dimen>
+    <dimen name="marginBottom_logo_otp">50dp</dimen>
+    <dimen name="height_logo_transfer">160dp</dimen>
+
+    <!--    activity transfer result-->
+    <dimen name="marginTop_img_check">50dp</dimen>
+    <dimen name="textsize_success">30sp</dimen>
+    <!--    adapter_account-->
+    <dimen name="marginLeft_view_adapter">5dp</dimen>
+    <!--    adapter_account_number-->
+    <dimen name="textsize_accountnumber">20sp</dimen>
+    <!--     adapter confirm account -->
+    <dimen name="marginleft_confirmaccount_adapter">15dp</dimen>
+    <dimen name="marginright_confirmaccount_adapter">15dp</dimen>
+    <dimen name="margintop_confirmaccount_adapter">4dp</dimen>
+    <!--    adapter item homefunction-->
+    <dimen name="marginLeft_homefunction_adapter">12dp</dimen>
+    <dimen name="marginright_homefunction_adapter">12dp</dimen>
+
+    <!--    icon image function-->
+    <dimen name="width_ic_function">40dp</dimen>
+    <dimen name="hight_ic_function">40dp</dimen>
+
+    <dimen name="margin">10dp</dimen>
+    <dimen name="textsize_function">10sp</dimen>
+
+    <!--    app home page-->
+    <dimen name="marginTop_logo_home">20dp</dimen>
+    <dimen name="marginBottom_logo_home">20dp</dimen>
+    <dimen name="width_ic_avatar">57dp</dimen>
+    <dimen name="hight_ic_avartar">57dp</dimen>
+    <dimen name="textsize_title">14sp</dimen>
+
+
+
+</resources>
